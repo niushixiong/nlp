@@ -1,0 +1,3957 @@
+
+
+
+<style>
+<!--
+.sqh span {
+	float: right;
+	padding-right: 20px;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.sqh span a {
+	padding-left: 10px;
+}
+-->
+</style>
+
+<script type="text/javascript" src="/sipopublicsearch/search/common/js/common.js"></script>
+<script type="text/javascript" src="/sipopublicsearch/search/common/js/addLiteraDB.js"></script>
+<script type="text/javascript" src="/sipopublicsearch/search/app/result/js/list.js"></script>
+<script type="text/javascript">
+<!--list.js-->
+$(function() {
+	//for (var i = 0; i < 50; i++) {
+		try {
+			$('div[id^=result_inner_div]')
+					.attr('class', 's_r_c_conter');
+			$('div[id^=absImg]').css('width', '270px');
+			$('div[id^=absImg]').css('height', '300px');
+		} catch (e) {
+		}
+	//}
+	// 选中本页
+	$("a[name='result_selectAll']").bind('click', function() {
+				selectAll(true);
+				return false;
+			});
+	// 取消全选
+	$("a[name='result_selectCancel']").bind('click', function() {
+				selectAll(false);
+				return false;
+			});
+	// 浏览文献
+	$("a[name='result_viewLitera']").bind('click', function() {
+				viewLitera_search('', '', 'many');
+				return false;
+			});
+	// 浏览全部文献
+	$("a[name='result_selectAllViewLitera']").bind('click', function() {
+				viewLitera_search('', '', 'all');
+				return false;
+			});
+	// 加入检索文献库
+	$("a[name='result_addLiteraDB']").bind('click', function() {
+				addSearchLiteraDb();
+				return false;
+			});
+	// 加入分析库
+	$("a[name='result_addAnalyze']").bind('click', function() {
+				addLiteraAnalyze(false);
+				return false;
+			});
+	// 全选加入分析库
+	$("a[name='result_selectAllAddAnalyze']").bind('click', function() {
+				addLiteraAnalyze(true);
+				return false;
+			});
+	// 下载文献
+	$("a[name='result_download']").bind('click',function(){
+		downloadPatents();
+		return false;
+	});
+	//加入批量下载库
+	$('a[name="result_addExportDB"]').bind('click',function(){
+		queryExportDBLiteraCount(false);
+		return false;
+	});
+	//全选加入批量下载库
+	$('a[name="result_selectAllAddExportDB"]').bind('click',function(){
+		queryExportDBLiteraCount(true);
+		return false;
+	});
+	
+	if($('#result_totalCount').val() == '-1'){
+		$('#resultWarn').show();
+	}
+	
+	window.scroll(0, 0);
+});
+// 检索因子
+dealSearchKeywords = new Array();
+//-->
+function showOrHideDiv(showDivId,hideDivId){
+	$("#"+hideDivId).hide();
+	$("#"+showDivId).show();
+}
+function showOrHide(divId,aId){
+	if($("#"+divId+":visible").length > 0){
+		$("#"+divId).hide();
+		$("#"+aId).text(sipo.search.show);
+	}else{
+		$("#"+divId).show();
+		$("#"+aId).text(sipo.search.hide);
+	}
+}
+</script>
+<!-- 浏览用检索因子 -->
+
+	<script type="text/javascript">
+			dealSearchKeywords.push("[手][ ]{0,}[机][ ]{0,}");
+	</script>
+
+<!-- 取出链接标签 -->
+
+
+
+
+
+
+
+
+<div class="forms_bottom">
+	<div class="f_b_three">
+		<p class="box_one_nav" style="padding-top: 5px;">
+			选择操作：
+		</p>
+		<div class="join_nav" style="float:left;">
+			<ul>
+				<li>
+					<a id="result_selectAll" name="result_selectAll" href="#">
+						全选本页</a>
+				</li>
+				<li>
+					<a id="result_selectCancel" name="result_selectCancel" href="#">
+						取消全选</a>
+				</li>
+				<li>
+					<a id="result_viewLitera" name="result_viewLitera" href="#">
+						浏览文献</a>
+				</li>
+				<li>
+					<a id="result_selectAllViewLitera" name="result_selectAllViewLitera" href="#">
+						浏览全部文献</a>
+				</li>
+				
+				
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<div align="center" style="padding-top: 10px;">
+	<div ><a href="javascript:gotoPage('resultlistFormUp',0,true,'resultlistDIV')">首页</a> <a href="javascript:gotoPage('resultlistFormUp',0,true,'resultlistDIV')">上一页</a> <a href="javascript:gotoPage('resultlistFormUp',0,true,'resultlistDIV')">[1]</a> <strong>2</strong><a href="javascript:gotoPage('resultlistFormUp',20,true,'resultlistDIV')">[3]</a> <a href="javascript:gotoPage('resultlistFormUp',30,true,'resultlistDIV')">[4]</a> <a href="javascript:gotoPage('resultlistFormUp',40,true,'resultlistDIV')">[5]</a> <a href="javascript:gotoPage('resultlistFormUp',50,true,'resultlistDIV')">[6]</a> <a href="javascript:gotoPage('resultlistFormUp',60,true,'resultlistDIV')">[7]</a> <a href="javascript:gotoPage('resultlistFormUp',70,true,'resultlistDIV')">[8]</a> <a href="javascript:gotoPage('resultlistFormUp',80,true,'resultlistDIV')">[9]</a> <a href="javascript:gotoPage('resultlistFormUp',90,true,'resultlistDIV')">[10]</a> <a href="javascript:gotoPage('resultlistFormUp',20,true,'resultlistDIV')">下一页</a> <a href="javascript:gotoPage('resultlistFormUp',143630,true,'resultlistDIV')">最后一页</a> &nbsp;共14364页&nbsp;143632条数据</div><form name='resultlistFormUp' id='resultlistFormUp'  action='showSearchResult-startWa.shtml'  method='post'><input type="hidden" name="resultPagination.limit" value="10" id="resultPagination.limit"/><input type="hidden" name="resultPagination.sumLimit" value="10" id="resultPagination.sumLimit"/><input type="hidden" name="resultPagination.start" value="10" id="start"/><input type="hidden" name="resultPagination.totalCount" value="143632" id="resultPagination.totalCount"/><input type="hidden" name="searchCondition.searchType" value="Sino_foreign"/><input type="hidden" name="searchCondition.dbId" value="VDB"/><input type="hidden" name="searchCondition.searchExp" value="手机"/><input type="hidden" name="resultPagination.sumLimit" value="10"/><input type="hidden" name="wee.bizlog.modulelevel" value="0200101"/></form>
+</div>
+<div class="sipo_content">
+	<div id="result_outter_div" class="sipo_result_content_left">
+		
+		
+		<div id="CN201511023891320160316FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511023891" value='CN201511023891' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511023891" value='CN201511023891.320160316FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511023891" value='客户端游戏向网页游戏移植的方法、网页游戏系统及终端'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511023891" value='CN201511023891'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511023891" value='2015.12.30'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511023891" value='2016.03.16'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511023891" value='CN105404539A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511023891" value='CN201500102389100.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511023891" value='CN999999999999000000010540453900A.0000'>
+			<input type="hidden" name="langHiddenCN201511023891" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511023891" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511023891"
+				value='网易（杭州）网络有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511023891" value=' 浙江省杭州市滨江区长河街道网商路599号4幢7层;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511023891" value='310052;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511023891"
+				value=''>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+				<h3 id="resultAn_CN201511023891" class="sqh">
+					<span>
+					<a id="result_a0" href="javascript:showOrHide('sameApDiv0','result_a0')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511023891.3
+					【发明】
+					<strong>申请日</strong> 2015.12.30
+				</h3>
+				<div id="sameApDiv0">
+			
+			
+			<div id="result_inner_divCN201511023891" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div0"  style="display:block;">
+					<div id="result_inner_left_divCN201511023891" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511023891.3
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.30
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105404539A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.16
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 客户端游戏向网页游戏移植的方法、网页游戏系统及终端
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> G06F9/445; G06F17/30
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 网易（杭州）网络有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 王梅林;唐文良;陈楚武;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 梁顺宜;郝传鑫;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 广州三环专利代理有限公司 44202;广州三环专利代理有限公司 44202;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div0','result_record_main_div0')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511023891" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511023891','CN201511023891320160316FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511023891','CN201511023891320160316FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511023891','CN201511023891320160316FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div0" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105404539A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div0','result_record_backup_div0')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201530563538920160203">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201530563538" value='CN201530563538' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201530563538" value='CN201530563538.920160203'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201530563538" value='笔（手机支架02）'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201530563538" value='CN201530563538'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201530563538" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201530563538" value='2016.02.03'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201530563538" value='CN303579693S'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201530563538" value='CN201500056353800.0003'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201530563538" value='CN999999999999000000030357969300S.0000'>
+			<input type="hidden" name="langHiddenCN201530563538" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201530563538" value='PROC'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201530563538"
+				value='桐庐金榜笔业有限公司'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201530563538" value='浙江省杭州市桐庐县分水镇武盛街46号弄32号'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201530563538" value='311519'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201530563538"
+				value='浙江'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201530563538" class="sqh">
+					<span>
+					<a id="result_a1" href="javascript:showOrHide('sameApDiv1','result_a1')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201530563538.9
+					【外观设计】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv1">
+			
+			
+			<div id="result_inner_divCN201530563538" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div1"  style="display:block;">
+					<div id="result_inner_left_divCN201530563538" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201530563538.9
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN303579693S
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.02.03
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 笔（<FONT>手机</FONT>支架02）
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 桐庐金榜笔业有限公司
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 徐宽飞
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">外观设计珞珈诺分类号: </strong> 19-06(10);14-99(10);26-02(10)
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div1','result_record_main_div1')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201530563538" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201530563538','CN201530563538920160203','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+						
+							
+						
+						<a href="javascript:showAssisantTools_search('CN201530563538','CN201530563538920160203',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201530563538','CN201530563538920160203',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div1" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN303579693S&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div1','result_record_backup_div1')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201530563537420160203">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201530563537" value='CN201530563537' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201530563537" value='CN201530563537.420160203'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201530563537" value='笔（手机支架01）'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201530563537" value='CN201530563537'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201530563537" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201530563537" value='2016.02.03'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201530563537" value='CN303579692S'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201530563537" value='CN201500056353700.0003'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201530563537" value='CN999999999999000000030357969200S.0000'>
+			<input type="hidden" name="langHiddenCN201530563537" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201530563537" value='PROC'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201530563537"
+				value='桐庐金榜笔业有限公司'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201530563537" value='浙江省杭州市桐庐县分水镇武盛街46号弄32号'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201530563537" value='311519'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201530563537"
+				value='浙江'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201530563537" class="sqh">
+					<span>
+					<a id="result_a2" href="javascript:showOrHide('sameApDiv2','result_a2')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201530563537.4
+					【外观设计】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv2">
+			
+			
+			<div id="result_inner_divCN201530563537" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div2"  style="display:block;">
+					<div id="result_inner_left_divCN201530563537" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201530563537.4
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN303579692S
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.02.03
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 笔（<FONT>手机</FONT>支架01）
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 桐庐金榜笔业有限公司
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 徐宽飞
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">外观设计珞珈诺分类号: </strong> 19-06(10);14-99(10)
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div2','result_record_main_div2')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201530563537" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201530563537','CN201530563537420160203','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+						
+							
+						
+						<a href="javascript:showAssisantTools_search('CN201530563537','CN201530563537420160203',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201530563537','CN201530563537420160203',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div2" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN303579692S&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div2','result_record_backup_div2')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511004133720160302FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511004133" value='CN201511004133' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511004133" value='CN201511004133.720160302FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511004133" value='一种老人智能腕带'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511004133" value='CN201511004133'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511004133" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511004133" value='2016.03.02'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511004133" value='CN105361868A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511004133" value='CN201500100413300.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511004133" value='CN999999999999000000010536186800A.0000'>
+			<input type="hidden" name="langHiddenCN201511004133" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511004133" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511004133"
+				value='苏州天擎电子通讯有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511004133" value=' 江苏省苏州市高新区滨河路厂滩上3号皇冠大厦4038室;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511004133" value='215011;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511004133"
+				value='江苏'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511004133" class="sqh">
+					<span>
+					<a id="result_a3" href="javascript:showOrHide('sameApDiv3','result_a3')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511004133.7
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv3">
+			
+			
+			<div id="result_inner_divCN201511004133" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div3"  style="display:block;">
+					<div id="result_inner_left_divCN201511004133" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511004133.7
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105361868A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.02
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 一种老人智能腕带
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> A61B5/0205; A61B5/145; A61B5/11; A61B5/00
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 苏州天擎电子通讯有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 陆希悦;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 张建生;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 北京瑞思知识产权代理事务所(普通合伙) 11341;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div3','result_record_main_div3')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511004133" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511004133','CN201511004133720160302FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511004133','CN201511004133720160302FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511004133','CN201511004133720160302FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div3" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105361868A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div3','result_record_backup_div3')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511008006420160309FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511008006" value='CN201511008006' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511008006" value='CN201511008006.420160309FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511008006" value='基于四轴飞行器的智能停车场及导航方法'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511008006" value='CN201511008006'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511008006" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511008006" value='2016.03.09'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511008006" value='CN105388913A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511008006" value='CN201500100800600.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511008006" value='CN999999999999000000010538891300A.0000'>
+			<input type="hidden" name="langHiddenCN201511008006" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511008006" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511008006"
+				value='上海中科深江电动车辆有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511008006" value=' 上海市嘉定区叶城路1631号;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511008006" value='201821;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511008006"
+				value='上海'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511008006" class="sqh">
+					<span>
+					<a id="result_a4" href="javascript:showOrHide('sameApDiv4','result_a4')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511008006.4
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv4">
+			
+			
+			<div id="result_inner_divCN201511008006" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div4"  style="display:block;">
+					<div id="result_inner_left_divCN201511008006" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511008006.4
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105388913A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.09
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 基于四轴飞行器的智能停车场及导航方法
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> G05D1/10; G08C17/02; G01C21/34
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 上海中科深江电动车辆有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 张陈斌;徐冲;孙江明;肖欣;林利;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 王洁;郑暄;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 上海智信专利代理有限公司 31002;上海智信专利代理有限公司 31002;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div4','result_record_main_div4')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511008006" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511008006','CN201511008006420160309FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511008006','CN201511008006420160309FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511008006','CN201511008006420160309FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div4" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105388913A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div4','result_record_backup_div4')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511003126520160309FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511003126" value='CN201511003126' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511003126" value='CN201511003126.520160309FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511003126" value='房车无线控制系统'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511003126" value='CN201511003126'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511003126" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511003126" value='2016.03.09'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511003126" value='CN105388798A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511003126" value='CN201500100312600.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511003126" value='CN999999999999000000010538879800A.0000'>
+			<input type="hidden" name="langHiddenCN201511003126" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511003126" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511003126"
+				value='苏州汉实汽车机械有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511003126" value=' 江苏省苏州市常熟高新技术产业开发区金门路15号1幢;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511003126" value='215500;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511003126"
+				value='江苏'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511003126" class="sqh">
+					<span>
+					<a id="result_a5" href="javascript:showOrHide('sameApDiv5','result_a5')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511003126.5
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv5">
+			
+			
+			<div id="result_inner_divCN201511003126" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div5"  style="display:block;">
+					<div id="result_inner_left_divCN201511003126" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511003126.5
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105388798A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.09
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 房车无线控制系统
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> G05B19/04
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 苏州汉实汽车机械有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 陈汉阳;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div5','result_record_main_div5')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511003126" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511003126','CN201511003126520160309FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511003126','CN201511003126520160309FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511003126','CN201511003126520160309FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div5" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105388798A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div5','result_record_backup_div5')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511004430120160316FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511004430" value='CN201511004430' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511004430" value='CN201511004430.120160316FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511004430" value='WIFI远程智能控制家用太阳能分体热水器及控制方法'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511004430" value='CN201511004430'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511004430" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511004430" value='2016.03.16'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511004430" value='CN105402910A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511004430" value='CN201500100443000.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511004430" value='CN999999999999000000010540291000A.0000'>
+			<input type="hidden" name="langHiddenCN201511004430" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511004430" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511004430"
+				value='山东小鸭新能源科技有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511004430" value=' 山东省济南市高新区工业南路51号;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511004430" value='250101;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511004430"
+				value=''>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511004430" class="sqh">
+					<span>
+					<a id="result_a6" href="javascript:showOrHide('sameApDiv6','result_a6')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511004430.1
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv6">
+			
+			
+			<div id="result_inner_divCN201511004430" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div6"  style="display:block;">
+					<div id="result_inner_left_divCN201511004430" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511004430.1
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105402910A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.16
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> WIFI远程智能控制家用太阳能分体热水器及控制方法
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> F24J2/40
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 山东小鸭新能源科技有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 王刚;刘波;张帮良;王娟;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 张贵宾;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 济南泉城专利商标事务所 37218;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div6','result_record_main_div6')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511004430" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511004430','CN201511004430120160316FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511004430','CN201511004430120160316FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511004430','CN201511004430120160316FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div6" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105402910A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div6','result_record_backup_div6')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511004244820160316FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511004244" value='CN201511004244' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511004244" value='CN201511004244.820160316FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511004244" value='智能家居中央控制系统及其控制方法'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511004244" value='CN201511004244'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511004244" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511004244" value='2016.03.16'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511004244" value='CN105404169A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511004244" value='CN201500100424400.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511004244" value='CN999999999999000000010540416900A.0000'>
+			<input type="hidden" name="langHiddenCN201511004244" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511004244" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511004244"
+				value='上海大学;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511004244" value=' 上海市宝山区上大路99号;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511004244" value='200444;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511004244"
+				value=''>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511004244" class="sqh">
+					<span>
+					<a id="result_a7" href="javascript:showOrHide('sameApDiv7','result_a7')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511004244.8
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv7">
+			
+			
+			<div id="result_inner_divCN201511004244" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div7"  style="display:block;">
+					<div id="result_inner_left_divCN201511004244" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511004244.8
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105404169A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.16
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 智能家居中央控制系统及其控制方法
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> G05B15/02; G05B19/418
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 上海大学;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 姚远;王磊;陈东;梁忠鹏;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 何文欣;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 上海上大专利事务所(普通合伙) 31205;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div7','result_record_main_div7')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511004244" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511004244','CN201511004244820160316FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511004244','CN201511004244820160316FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511004244','CN201511004244820160316FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div7" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105404169A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div7','result_record_backup_div7')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201511001117220160316FM">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201511001117" value='CN201511001117' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201511001117" value='CN201511001117.220160316FM'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201511001117" value='一种篮球训练装置'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201511001117" value='CN201511001117'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201511001117" value='2015.12.29'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201511001117" value='2016.03.16'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201511001117" value='CN105396278A'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201511001117" value='CN201500100111700.0001'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201511001117" value='CN999999999999000000010539627800A.0000'>
+			<input type="hidden" name="langHiddenCN201511001117" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201511001117" value='PUB'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201511001117"
+				value='太原理工大学;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201511001117" value=' 山西省太原市万柏林区迎泽西大街79号;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201511001117" value='030024;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201511001117"
+				value=''>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201511001117" class="sqh">
+					<span>
+					<a id="result_a8" href="javascript:showOrHide('sameApDiv8','result_a8')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201511001117.2
+					【发明】
+					<strong>申请日</strong> 2015.12.29
+				</h3>
+				<div id="sameApDiv8">
+			
+			
+			<div id="result_inner_divCN201511001117" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div8"  style="display:block;">
+					<div id="result_inner_left_divCN201511001117" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201511001117.2
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.29
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN105396278A
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.03.16
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 一种篮球训练装置
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> A63B69/00; A63B71/06
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 太原理工大学;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 常媛媛;晋慰;闫慧民;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 李富元;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 太原市科瑞达专利代理有限公司 14101;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div8','result_record_main_div8')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201511001117" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201511001117','CN201511001117220160316FM','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+							
+						
+						
+						<a href="javascript:showAssisantTools_search('CN201511001117','CN201511001117220160316FM',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201511001117','CN201511001117220160316FM',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div8" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN105396278A&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【公开】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div8','result_record_backup_div8')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			</div>
+		
+		<div id="CN201520803218020160224XX">
+			<!-- 文献标识 -->
+			<input type="hidden" name="vIdHiddenCN201520803218" value='CN201520803218' />
+			<!-- 文献唯一标识 -->
+			<input type="hidden" name="idHiddenCN201520803218" value='CN201520803218.020160224XX'>
+			<!-- 发明名称 -->
+			<input type="hidden" name="titleHiddenCN201520803218" value='一种高性能高保真多媒体音箱'>
+			<!-- nrdAN -->
+			<input type="hidden" name="nrdAnHiddenCN201520803218" value='CN201520803218'>
+			<!-- nrdAPD -->
+			<input type="hidden" name="nrdAdpHiddenCN201520803218" value='2015.12.28'>
+			<!-- nrdPD -->
+			<input type="hidden" name="nrdpdHiddenCN201520803218" value='2016.02.24'>
+			<!-- nrdPN -->
+			<input type="hidden" name="nrdPnHiddenCN201520803218" value='CN205051856U'>
+			<!-- ansn -->
+			<input type="hidden" name="appSnHiddenCN201520803218" value='CN201500080321800.0002'>
+			<!-- pnsn -->
+			<input type="hidden" name="pnSnHiddenCN201520803218" value='CN999999999999000000020505185600U.0000'>
+			<input type="hidden" name="langHiddenCN201520803218" value='CN'>
+			<input type="hidden" name="docStatusHiddenCN201520803218" value='PROC'>
+			
+			<!-- 申请人/专利权人 -->
+			<input type="hidden" name="appNameHiddenCN201520803218"
+				value='江西日增科技有限公司;'>
+			<!-- 地址 -->
+			<input type="hidden" name="appAddrHiddenCN201520803218" value=' 江西省吉安市安福县工业园区;'>
+			<!-- 邮编 -->
+			<input type="hidden" name="appZipHiddenCN201520803218" value='343000;'>
+			<!-- 申请人/专利权人所在国代码 -->
+			<input type="hidden" name="appCountryHiddenCN201520803218"
+				value='江西'>
+			<!-- 非相同申请的情况下，输出申请号 -->
+			
+				
+					</div>
+				
+				<h3 id="resultAn_CN201520803218" class="sqh">
+					<span>
+					<a id="result_a9" href="javascript:showOrHide('sameApDiv9','result_a9')">隐藏</a>
+					<a href="#">页首</a>
+					<a href="#footer">页尾</a> 
+					</span>
+					<!-- 修改原AP为APO -->
+					<strong>申请号</strong> CN201520803218.0
+					【实用新型】
+					<strong>申请日</strong> 2015.12.28
+				</h3>
+				<div id="sameApDiv9">
+			
+			
+			<div id="result_inner_divCN201520803218" class="s_c_conter">
+				<div style="float: left; width: 20px;">
+					<input type="checkbox" name="resultCheckbox" value="" />
+				</div>
+				<div id="result_record_main_div9"  style="display:block;">
+					<div id="result_inner_left_divCN201520803218" style="float: left; width: 600px;">
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请号&shy;: </strong> CN201520803218.0
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请日: </strong> 2015.12.28
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）号&shy;: </strong> CN205051856U
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">公开（公告）日: </strong> 2016.02.24
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明名称: </strong> 一种高性能高保真多媒体音箱
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">IPC分类号: </strong> H04R1/20
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">申请（专利权）人: </strong> 江西日增科技有限公司;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">发明人: </strong> 李军凡;
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权号: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">优先权日: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理人: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+							
+								
+									<!-- 隐藏原申请号 -->
+										<div class="conter_talbe">
+										<table width="100%">
+											<tr>
+												<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+													
+														<strong style="color:#16456b;">代理机构: </strong> 
+													
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+								
+								
+							
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_backup_div9','result_record_main_div9')">隐藏</a></div>
+					</div>
+					<!-- 摘要附图 -->
+					
+					<div class="clear"></div>
+					<div id="result_link_divCN201520803218" class="sipo_link">
+						<a href="javascript:viewLitera_search('CN201520803218','CN201520803218020160224XX','single')" onclick="">查看文献详细信息</a>
+						-
+						
+						
+						
+							
+						
+						<a href="javascript:showAssisantTools_search('CN201520803218','CN201520803218020160224XX',2)" onclick="">查看法律状态</a>
+						-
+						<a href="javascript:showAssisantTools_search('CN201520803218','CN201520803218020160224XX',3)" onclick="">查看申请（专利权）人基本信息</a>
+					</div>
+				</div>
+				<div id="result_record_backup_div9" style="display:none;">
+					<div class="conter_talbe">
+						<table width="100%">
+							<tr>
+								<td height="25px" style="text-align: left; line-height: 20px;" valign="top">
+									公开（公告）号 : CN205051856U&nbsp;--&nbsp;中文
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div style="width:130px;float:left;">
+						<div style="width:80px;float:left;">【授权公告】</div>
+						<div style="width:40px;float:right;"><a href="javascript:showOrHideDiv('result_record_main_div9','result_record_backup_div9')">显示</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+				</div>
+			
+			</div>
+		
+		
+		
+		
+	</div>
+</div>
+<div class="clear"></div>
+<div align="center" style="padding-top: 10px;">
+	<div ><a href="javascript:gotoPage('resultlistForm',0,true,'resultlistDIV')">首页</a> <a href="javascript:gotoPage('resultlistForm',0,true,'resultlistDIV')">上一页</a> <a href="javascript:gotoPage('resultlistForm',0,true,'resultlistDIV')">[1]</a> <strong>2</strong><a href="javascript:gotoPage('resultlistForm',20,true,'resultlistDIV')">[3]</a> <a href="javascript:gotoPage('resultlistForm',30,true,'resultlistDIV')">[4]</a> <a href="javascript:gotoPage('resultlistForm',40,true,'resultlistDIV')">[5]</a> <a href="javascript:gotoPage('resultlistForm',50,true,'resultlistDIV')">[6]</a> <a href="javascript:gotoPage('resultlistForm',60,true,'resultlistDIV')">[7]</a> <a href="javascript:gotoPage('resultlistForm',70,true,'resultlistDIV')">[8]</a> <a href="javascript:gotoPage('resultlistForm',80,true,'resultlistDIV')">[9]</a> <a href="javascript:gotoPage('resultlistForm',90,true,'resultlistDIV')">[10]</a> <a href="javascript:gotoPage('resultlistForm',20,true,'resultlistDIV')">下一页</a> <a href="javascript:gotoPage('resultlistForm',143630,true,'resultlistDIV')">最后一页</a> &nbsp;共14364页&nbsp;143632条数据</div><form name='resultlistForm' id='resultlistForm'  action='showSearchResult-startWa.shtml'  method='post'><input type="hidden" name="resultPagination.limit" value="10" id="resultPagination.limit"/><input type="hidden" name="resultPagination.sumLimit" value="10" id="resultPagination.sumLimit"/><input type="hidden" name="resultPagination.start" value="10" id="start"/><input type="hidden" name="resultPagination.totalCount" value="143632" id="resultPagination.totalCount"/><input type="hidden" name="searchCondition.searchType" value="Sino_foreign"/><input type="hidden" name="searchCondition.dbId" value="VDB"/><input type="hidden" name="searchCondition.searchExp" value="手机"/><input type="hidden" name="resultPagination.sumLimit" value="10"/><input type="hidden" name="wee.bizlog.modulelevel" value="0200101"/></form>
+</div>
+<div class="forms_bottom">
+	<div class="f_b_three">
+		<p class="box_one_nav" style="padding-top: 5px;">
+			选择操作：
+		</p>
+		<div class="join_nav" style="float:left;">
+			<ul>
+				<li>
+					<a id="result_selectAll" name="result_selectAll" href="#">
+						全选本页</a>
+				</li>
+				<li>
+					<a id="result_selectCancel" name="result_selectCancel" href="#">
+						取消全选</a>
+				</li>
+				<li>
+					<a id="result_viewLitera" name="result_viewLitera" href="#">
+						浏览文献</a>
+				</li>
+				<li>
+					<a id="result_selectAllViewLitera" name="result_selectAllViewLitera" href="#">
+						浏览全部文献</a>
+				</li>
+				
+				
+				
+				<!-- 
+				<li>
+					<a id="result_download" name="result_download" href="#">
+						下载文献</a>
+				</li>
+				 -->
+			</ul>
+		</div>
+	</div>
+</div>
+<div style="display: none">
+	<!-- 显示字段的隐藏域 -->
+	<input type="hidden" id="result_displayFields" value="">
+	<!-- 排序字段的隐藏域 -->
+	<input type="hidden" id="result_sortFields" value="-APD,+PD">
+	<!-- 获取的记录总数 -->
+	<input type="hidden" id="result_totalCount" value="143632">
+	<!-- 获取检索策略 -->
+	<input type="hidden" id="result_strategy" value="">
+	<!-- 获取检索式id -->
+	<input type="hidden" id="result_ssId" value="">
+	<!-- 可执行检索式，原始的 -->
+	<div id="resultQC_executableSearchExp"></div>
+	<!-- 可执行检索式，只有日期区间的 -->
+	<div id="resultQC_dataExecutableSearchExp"></div>
+	<!-- 可执行检索式，只有中国文献类型的 -->
+	<div id="resultQC_literaExecutableSearchExp"></div>
+	<!-- 检索式的隐藏域，可执行检索式 -->
+	<div id="result_executableSearchExp">VDB:('手机')</div>
+	<!-- 检索式的隐藏域，传出的检索式 -->
+	<div id="result_searchExp">手机</div>
+	<!-- 获取解析后的检索式，用于检索文献库显示 -->
+	<div id="result_literatureSF"></div>
+	<!-- 钻取检索form -->
+	<form id="drillSearchForm" action="/sipopublicsearch/search/showSearchResult-drillSearchByViewSetting.shtml" method="post" target="_blank">
+		<input type="hidden" id="drillSearchExp" name="searchCondition.searchExp" value=""/>
+		<input type="hidden" name="searchCondition.dbId" value="VDB"/>
+		<input type="hidden" id="drillSearchMode" name="searchMode" value=""> 
+	</form>
+</div>
+<input type="hidden" id="startLoad" value=""/>
+<script type="text/javascript"><!--
+		// 为分页标签添加参数
+	addParamToPageTag();
+	$(document).ready(function(){
+	var absImgs = $('.absImgs');
+	if(absImgs.size() > 0){//显示摘要附图
+		var rids = new Array();
+			absImgs.each(function(i){
+			rids[i] = this.id;
+			});
+			$.ajax({
+				type : "POST",
+				url : contextPath+"/search/retrieveUrls.shtml",
+				data : {
+					rids : rids
+				},
+				dataType : "json",
+				success : function(data, textStatus){
+					if(data.figureUrls && data.figureUrls.length > 0){
+						absImgs.each(function(j){
+							if(data.figureUrls[j] && $.trim(data.figureUrls[j]).length > 0){
+								$(this).append('<img id="absImg'+j+'" src="'+ contextPath + data.figureUrls[j] +'" height="230px" width="160px" onclick="showAbsImg('+j+')" style="cursor:hand;" alt=""/>');								
+							}
+						});
+					}
+				},
+				error : function(XMLHttpRequest, textStatus, errorThrown){
+					
+				}
+			});
+		}
+	});
+	//根据滚动条判断是否显示更多
+	//var sumLimit=parseInt($("[name='resultPagination.sumLimit']").val());
+	//var ctime=sumLimit/10-1;
+	//$(window).scroll(function(){
+    //	totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+    //	if($(document).height() <= totalheight){
+    //	var startLoad=$("#startLoad").val();
+    	//if(startLoad == undefined || startLoad == '' || startLoad == null){
+    //	$("#startLoad").val("false");
+		//	if(ctime>=1){
+	   //     var startnext=parseInt($("[name='resultPagination.start']").val())+10;
+	    //    $("[name='resultPagination.start']").val(startnext);
+	   //     showMore('resultlistForm',startnext,true,'result_outter_div');
+	   //     ctime-=1;
+	   //     			}
+	   //     			}
+   // }
+	//});
+//
+--></script>

@@ -1,0 +1,2078 @@
+Fri, 25 Mar 2016 21:00:34 scrapy325thread.py[line:475] DEBUG the spyer start:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:62] DEBUG Thread:Thread0
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:264] DEBUG readHtml function start:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:62] DEBUG Thread:Thread1
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:62] DEBUG Thread:Thread2
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:62] DEBUG Thread:Thread3
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:62] DEBUG Thread:Thread4
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:00:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:266] DEBUG readHtml end
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:268] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:00:53 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:00:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:00:55 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:00:55 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:00:55 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:00:58 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:00:58 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:00:58 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:00:58 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:00:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:00:59 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:00:59 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:00:59 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:453] DEBUG the startpage 60 of the htmls is: 
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '60', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:297] DEBUG start to page1 get each item(10)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:453] DEBUG the startpage 90 of the htmls is: 
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '90', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:453] DEBUG the startpage 30 of the htmls is: 
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '30', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:453] DEBUG the startpage 120 of the htmls is: 
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '120', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:03:57 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:59 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:04 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:04 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:04 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:04 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:270] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:16 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:04:16 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:04:16 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:06:45 scrapy325thread.py[line:297] DEBUG start to page10 get each item(10)
+Fri, 25 Mar 2016 21:06:45 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:06:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:06:46 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:06:46 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:06:46 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:06:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:06:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:48 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:297] DEBUG start to page7 get each item(10)
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:06:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:57 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:06:58 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:06:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:06:59 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:06:59 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:06:59 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:06:59 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:00 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:01 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:01 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:01 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:297] DEBUG start to page4 get each item(10)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:297] DEBUG start to page13 get each item(10)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:07 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:08 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:08 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:10 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:453] DEBUG the startpage 10 of the htmls is: 
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '10', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:12 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:12 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:12 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:12 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:12 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:14 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:17 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:19 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:20 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:24 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:25 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:25 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:25 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:25 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:25 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:26 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:29 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:31 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:36 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:37 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:38 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:44 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:45 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:45 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:45 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:45 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:297] DEBUG start to page2 get each item(10)
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:48 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:07:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:56 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:57 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:07:58 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:07:59 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:00 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:01 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:04 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:04 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:04 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:04 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:08 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:10 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:10 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:10 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:10 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:10 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:08:11 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:08:13 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:08:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:01:22 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:01:24 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:25 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:25 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:01:25 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:01:25 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:26 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:01:27 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:33 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:33 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:33 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:33 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:36 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:37 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:38 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:38 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:38 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:38 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:38 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:39 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:297] DEBUG start to page11 get each item(10)
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:41 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:44 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:297] DEBUG start to page5 get each item(10)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:453] DEBUG the startpage 130 of the htmls is: 
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '130', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:01:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:129] DEBUG timeout,request again
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:297] DEBUG start to page14 get each item(10)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:55 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:01:56 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:01:57 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:01:58 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:01:59 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:453] DEBUG the startpage 80 of the htmls is: 
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '80', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:02:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:04 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:06 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:08 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:12 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:02:14 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:15 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:19 scrapy325thread.py[line:297] DEBUG start to page9 get each item(10)
+Fri, 25 Mar 2016 21:02:19 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:19 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:20 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:02:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:23 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:24 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:25 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:26 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:28 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:453] DEBUG the startpage 110 of the htmls is: 
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '110', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:35 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:36 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:37 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:37 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:02:37 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:02:37 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:38 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:40 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:40 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:40 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:40 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:40 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:297] DEBUG start to page12 get each item(10)
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:42 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:43 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:44 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:453] DEBUG the startpage 20 of the htmls is: 
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '20', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:49 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:02:49 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:02:49 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:02:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:50 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:50 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:02:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:51 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:02:51 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:02:51 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:02:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:02:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:00 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:00 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:297] DEBUG start to page3 get each item(10)
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:02 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:453] DEBUG the startpage 50 of the htmls is: 
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '50', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:03 scrapy325thread.py[line:107] DEBUG request timeout and rerequest
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:04 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:05 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:06 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:06 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:06 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:06 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:06 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:07 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:08 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:08 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:08 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:08 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:08 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:297] DEBUG start to page6 get each item(10)
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:12 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:13 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:14 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:15 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:16 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:17 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:18 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:20 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:21 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:22 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:22 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:22 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:22 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:23 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:24 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:28 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:29 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:30 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:31 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:32 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:32 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:32 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:32 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:32 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:273] DEBUG parser function start
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:427] DEBUG  parse: readHtml start and parse:
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:197] DEBUG readHtml send req start
+Fri, 25 Mar 2016 21:03:33 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:34 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:199] DEBUG readHtml get the response
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:431] DEBUG parse: readHtml end:
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:35 scrapy325thread.py[line:433] DEBUG the html to  soup
+Fri, 25 Mar 2016 21:03:38 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:40 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:41 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:41 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:41 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:41 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:41 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:440] DEBUG form got and start to parse and construct the postData:
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:453] DEBUG the startpage 140 of the htmls is: 
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:454] DEBUG postdata is:
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:455] DEBUG {'resultPagination.limit': '10', 'resultPagination.start': '140', 'wee.bizlog.modulelevel': '0200101', 'searchCondition.searchType': 'Sino_foreign', 'resultPagination.totalCount': '143733', 'resultPagination.sumLimit': '10', 'searchCondition.searchExp': '\xe6\x89\x8b\xe6\x9c\xba', 'searchCondition.dbId': 'VDB'}
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:465] DEBUG parse: send get:(req:showserchResult-startWa.shtml)
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:45 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:46 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:46 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:46 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:46 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:46 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:467] DEBUG parse: send return (response:showsearchResult_startWa.shtml)
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:275] DEBUG parser function end
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:277] DEBUG getEncoParamSendreq function start:
+Fri, 25 Mar 2016 21:03:47 scrapy325thread.py[line:286] DEBUG html to soup
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:48 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:49 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:51 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:53 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:297] DEBUG start to page15 get each item(10)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:55 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:03:56 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:03:58 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:04:01 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:02 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:02 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:02 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:02 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:02 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:04:08 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:09 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:10 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:11 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:12 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:22 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:24 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:26 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:26 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:26 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:26 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:26 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:27 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:29 scrapy325thread.py[line:133] DEBUG socket.error: request again
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:39 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:40 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:50 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:51 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:52 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:52 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:52 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:52 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:52 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:316] DEBUG send the param to server(to get the paramDeal that server dealed)
+Fri, 25 Mar 2016 21:04:53 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:54 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:54 scrapy325thread.py[line:319] DEBUG paramencod.shtml already return
+Fri, 25 Mar 2016 21:04:54 scrapy325thread.py[line:325] DEBUG <type 'str'>
+Fri, 25 Mar 2016 21:04:54 scrapy325thread.py[line:329] DEBUG send request to server:(req:showabstractInfo.shtml)
+Fri, 25 Mar 2016 21:04:54 scrapy325thread.py[line:101] DEBUG send request(with try catch)
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:136] DEBUG get finally
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:352] DEBUG get return(response:showabstractInfo.shtml),read the html
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:359] DEBUG write file:
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:362] DEBUG write file end
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:279] DEBUG getEncoParamSendreq function end
+Fri, 25 Mar 2016 21:04:55 scrapy325thread.py[line:524] DEBUG the spyder end
